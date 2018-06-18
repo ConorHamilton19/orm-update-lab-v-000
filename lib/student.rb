@@ -29,11 +29,7 @@ class Student
   
   def save
      sql = <<-SQL
-    CREATE TABLE IF NOT EXISTS students (
-    id INTEGER PRIMARY KEY,
-    name TEXT,
-    grade TEXT
-    )
+    INSERT INTO students()
     SQL
     
     DB[:conn].execute(sql)
