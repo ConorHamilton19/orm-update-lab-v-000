@@ -33,6 +33,10 @@ class Student
     VALUES (?,?)
     SQL
     
-    DB[:conn].execute(sql, name, grade)
+    DB[:conn].execute(sql, self.name, self.grade)
+  end 
+  
+  def self.create(name, grade)
+    student.new(name, grade)
   end 
 end
