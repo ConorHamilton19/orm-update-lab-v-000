@@ -8,4 +8,9 @@ class Student
     @grade = grade
     @id = id 
   end 
+  
+  def self.create_table(name, grade)
+    sql = <<-SQL
+    CREATE TABLE 
+    SQL
 end
